@@ -19,7 +19,6 @@ body {
 .p-head {
 	width: 250px;
 	height: 250px;
-	background: #fae721;
 	margin: 0 auto;
 	position: relative;
 	z-index: 100;
@@ -51,10 +50,146 @@ body {
 	float: left;
 	width: 100%;
 	height: 135px;
-	background: blue;
 	margin-top: 70px;
 	z-index: 10;
 }
+
+
+/* EYES */
+
+.head-top .head-content .eye {
+	position: absolute;
+	top: 20px;
+	width: 32px;
+	height: 36px;
+	background: #120a00;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.head-top .head-content .eye.left-eye {
+	left: 25px;
+}
+
+.head-top .head-content .eye.right-eye {
+	right: 25px;
+}
+
+.head-top .head-content .eye .brown-eye {
+	position: absolute;
+	bottom: 1px;
+	width: 29px;
+	height: 29px;
+	background: #aa6023;
+	border-radius: 23px;
+	box-shadow: 0 0 15px inset;
+}
+
+.head-top .head-content .eye.left-eye .brown-eye {
+	right:  1px;
+}
+
+.head-top .head-content .eye.right-eye .brown-eye {
+	left: 2px;
+}
+
+.head-top .head-content .eye .brown-eye div {
+	position: absolute;
+	top: -3px;
+	width: 28px;
+	height: 28px;
+	background: #120a00;
+	border-radius: 30px;
+}
+
+.head-top .head-content .eye.left-eye .brown-eye div {
+	right: -1px;
+}
+
+.head-top .head-content .eye.right-eye .brown-eye div {
+	left: -1px;
+}
+
+.head-top .head-content .eye .eye-light {
+	position: absolute;
+	top: 7px;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #000;
+	background: #FFF;
+	border-radius: 8px;
+}
+
+.head-top .head-content .eye.left-eye .eye-light {
+	right: 3px;
+}
+
+.head-top .head-content .eye.right-eye .eye-light {
+	left: 3px;
+}
+
+
+
+/* NOSE */
+
+.head-top .head-content .nose {
+	margin: 0 auto;
+	width: 12px;
+	height: 8px;
+	background: #100c09;
+	top: 65px;
+	position: relative;
+	border-radius: 16px;
+}
+
+
+/* MOUTH */
+
+.container-mouth {
+	position: relative;
+	width: 80px;
+	height: 30px;
+	margin: 0 auto;
+	top: 80px;
+	overflow: hidden;
+}
+
+.container-mouth .mouth-left,
+.container-mouth .mouth-right {
+	float: left;
+	width: 40px;
+	height: 41px;
+	border-bottom: 1px solid #000;
+	border-radius: 22px;
+	margin-top: -20px;
+}
+
+
+/* CHEEKS */
+
+.cheek {
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	background: #fe4b23;
+	border: 1px solid #000;
+	top: 78px;
+	border-radius: 19px;
+}
+
+.cheek.left-cheek {
+	left: -14px;
+}
+
+.cheek.right-cheek {
+	right: -14px;
+}
+
+
+
+
+
+
 
 .head-bottom {
 	width: 230px;
@@ -66,6 +201,7 @@ body {
 	left: 9px;
 	z-index: 45;
 	border-radius: 600px 600px 2000px 2000px;
+	overflow: hidden;
 }
 
 
