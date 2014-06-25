@@ -26,11 +26,11 @@ body {
 
 .head-top {
 	width: 198px;
-	height: 198px;
+	height: 194px;
 	background: #fae721;
 	margin: 0 auto;
 	position: relative;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	z-index: 50;
 	border-radius: 100px 100px 0px 0px;
 }
@@ -38,6 +38,94 @@ body {
 /* EARS */
 
 .ear {
+	position: absolute;
+	background: none repeat scroll 0 0 #fae721;
+	border: 2px solid #000000;
+	overflow: hidden;
+	/*-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFW…9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);*/
+}
+
+.ear.left-ear {
+	left: -35px;
+	top: -65px;
+	width: 100px;
+	height: 110px;
+	border-radius: 5px 125% 0px 125%;
+	-webkit-transform: rotate(-26deg) skewX(25deg) skewY(0deg);
+	-moz-transform: rotate(-26deg) skewX(25deg) skewY(0deg);
+	-o-transform: rotate(-26deg) skewX(25deg) skewY(0deg);
+	transform: rotate(-26deg) skewX(25deg) skewY(0deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-animation: ear_left 4.5s infinite linear 0s;
+	-moz-animation: ear_left 4.5s infinite linear 0s;
+	-ms-animation: ear_left 4.5s infinite linear 0s;
+	-o-animation: ear_left 4.5s infinite linear 0s;
+	animation: ear_left 4.5s infinite linear 0s;
+}
+
+.ear.left-ear:before {
+	background-color: #000000;
+	content: "";
+	height: 60px;
+	left: -32px;
+	position: absolute;
+	top: -5px;
+	width: 60px;
+	-webkit-transform: rotate(18deg);
+	-moz-transform: rotate(18deg);
+	-o-transform: rotate(18deg);
+	-ms-transform: rotate(18deg);
+	transform: rotate(18deg);
+}
+
+.ear.right-ear {
+	width: 140px;
+	height: 80px;
+	right: -77px;
+	top: 70px;
+	border-radius: 10px 125% 10px 125%;
+	-webkit-transform: rotate(-90deg) skewX(27deg) skewY(0deg);
+	-moz-transform: rotate(-90deg) skewX(27deg) skewY(0deg);
+	-o-transform: rotate(-90deg) skewX(27deg) skewY(0deg);
+	-ms-transform: rotate(-90deg) skewX(27deg) skewY(0deg);
+	transform: rotate(-90deg) skewX(27deg) skewY(0deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-animation: ear_right 3s infinite linear 0s;
+	-moz-animation: ear_right 3s infinite linear 0s;
+	-ms-animation: ear_right 3s infinite linear 0s;
+	-o-animation: ear_right 3s infinite linear 0s;
+	animation: ear_right 3s infinite linear 0s;
+}
+
+.ear.right-ear:before {
+	background-color: #000000;
+	content: "";
+	height: 60px;
+	position: absolute;
+	right: -5px;
+	top: 62px;
+	width: 65px;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+
+
+
+
+
+
+/*.ear {
 	position: absolute;
 	width: 50px;
 	height: 120px;
@@ -80,15 +168,15 @@ body {
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
-}
+}*/
 
 /* MAIN HEAD STRUCTURE */
 
 .head-top .hide-bottom-border {
 	position: absolute;
-	left: -1px;
-	bottom: -1px;
-	width: 200px;
+	left: -2px;
+	bottom: -2px;
+	width: 202px;
 	height: 77px;
 	background: #fae721;
 	z-index: 1;
@@ -245,7 +333,7 @@ body {
 	height: 130px;
 	background: #fae721;
 	position: absolute;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	bottom: 0;
 	left: 9px;
 	z-index: 45;
