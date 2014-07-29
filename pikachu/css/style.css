@@ -5,7 +5,6 @@ body {
 .main-content {
 	margin-top: 150px;
 	height: 500px;
-	background: #CCC;
 }
 
 .wrapper {
@@ -221,7 +220,6 @@ body {
 }
 
 
-
 /* NOSE */
 
 .head-top .head-content .nose {
@@ -277,12 +275,6 @@ body {
 	right: -14px;
 }
 
-
-
-
-
-
-
 .head-bottom {
 	width: 230px;
 	height: 130px;
@@ -305,7 +297,6 @@ body {
 	margin: 0 auto;
 	position: relative;
 	z-index: 99;
-	background: green;
 	margin-top: -50px;
 }
 
@@ -433,9 +424,69 @@ body {
 
 .p-tail {
 	position: absolute;
-	left: 100%;
-	bottom: 30px;
+	left: 89%;
+	bottom: 85px;
 	width: 150px;
 	height: 300px;
-	background: red;
+	transform: skewX(11deg);
+	z-index: -1;
 }
+
+.p-tail .tail {
+	position: absolute;
+	border: 2px solid #000;
+	background: #fae721;
+}
+
+.p-tail .tail.tail-1 {
+	border-top: none;
+	bottom: 0;
+	left: 0;
+	background: #df4511;
+	width: 20px;
+	height: 25px;
+}
+
+.p-tail .tail.tail-2 {
+	border-bottom: none;
+	border-top: none;
+	bottom: 27px;
+	left: 0;
+	width: 20px;
+	height: 25px;
+}
+
+.p-tail .tail.tail-3 {
+	bottom: 27px;
+	left: 0;
+	width: 90px;
+	height: 25px;
+}
+
+.p-tail .tail.tail-4 {
+	bottom: 27px;
+	left: 32px;
+	width: 50px;
+	height: 105px;
+	transform: skewX(20deg);
+}
+
+.p-tail .tail.tail-5 {
+	bottom: 97px;
+	left: 12px;
+	width: 175px;
+	height: 75px;
+	transform: skewX(20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
