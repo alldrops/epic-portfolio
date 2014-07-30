@@ -171,10 +171,6 @@ body {
 }
 
 
-
-
-
-
 /* MAIN HEAD STRUCTURE */
 
 .head-top .hide-bottom-border {
@@ -261,8 +257,6 @@ body {
 	40% {
 		bottom: -38px;
 	}
-
-
 
 	100% {
 		bottom: -38px;
@@ -360,7 +354,7 @@ body {
 	float: left;
 	width: 40px;
 	height: 41px;
-	border-bottom: 1px solid #000;
+	border-bottom: 2px solid #000;
 	border-radius: 22px;
 	margin-top: -20px;
 }
