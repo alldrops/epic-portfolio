@@ -87,21 +87,21 @@ body {
 	right: -65px;
 	top: 40px;
 	border-radius: 10px 125% 10px 125%;
-	-webkit-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
-	-moz-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
-	-o-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
-	-ms-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
-	transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+	-webkit-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	-moz-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	-o-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	-ms-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	transform: rotate(-35deg) skewX(32deg) skewY(0deg);
 	-webkit-transform-origin: 0 0;
 	-moz-transform-origin: 0 0;
 	-o-transform-origin: 0 0;
 	-ms-transform-origin: 0 0;
 	transform-origin: 0 0;
-	-webkit-animation: ear_right 3s infinite linear 0s;
-	-moz-animation: ear_right 3s infinite linear 0s;
-	-ms-animation: ear_right 3s infinite linear 0s;
-	-o-animation: ear_right 3s infinite linear 0s;
-	animation: ear_right 3s infinite linear 0s;
+	-webkit-animation: ear_anim 4s infinite 0s;
+	-moz-animation: ear_anim 4s infinite 0s;
+	-ms-animation: ear_anim 4s infinite 0s;
+	-o-animation: ear_anim 4s infinite 0s;
+	animation: ear_anim 4s infinite 0s;
 }
 
 .ear.right-ear:before {
@@ -119,6 +119,61 @@ body {
 	transform: rotate(-15deg);
 }
 
+@-webkit-keyframes ear_anim {
+
+	0% { 
+		-webkit-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	}
+
+	3% {
+		-webkit-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+	}
+
+	6% {
+		-webkit-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	}
+
+	10% {
+		-webkit-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+	}
+
+	95% {
+		-webkit-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-45deg) skewX(32deg) skewY(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-moz-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-o-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		-ms-transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+		transform: rotate(-35deg) skewX(32deg) skewY(0deg);
+	}
+}
+
+
+
+
+
 
 /* MAIN HEAD STRUCTURE */
 
@@ -130,9 +185,10 @@ body {
 	height: 77px;
 	background: #fae721;
 	z-index: 1;
-	/* FIX FOR CHEEK BREAK ON CHROME
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 1px;
+	/* FIX FOR CHEEK BREAK ON CHROME
+	border-top-left-radius: 2px;
 	*/
 }
 
@@ -156,6 +212,61 @@ body {
 	background: #120a00;
 	border: 2px solid #000;
 	border-radius: 20px;
+}
+
+.head-top .head-content .eye:before {
+	position: absolute;
+	content: " ";
+	bottom: -38px;
+	left: -6px;
+	z-index: 20;
+	width: 45px;
+	height: 35px;
+	background: #fae721;
+	/*background: green;*/
+	border-radius: 50%;
+	-webkit-animation: eye_blink 6s infinite 0s;
+	-moz-animation: eye_blink 6s infinite 0s;
+	-ms-animation: eye_blink 6s infinite 0s;
+	-o-animation: eye_blink 6s infinite 0s;
+	animation: eye_blink 6s infinite 0s;
+}
+
+@-webkit-keyframes eye_blink {
+
+	0% { 
+		bottom: -38px;
+	}
+
+	34% {
+		bottom: -38px;
+	}
+
+	35% {
+		bottom: -2px;
+	}
+
+	36% {
+		bottom: -38px;
+	}
+
+	38% {
+		bottom: -38px;
+	}
+
+	39% {
+		bottom: -2px;
+	}
+
+	40% {
+		bottom: -38px;
+	}
+
+
+
+	100% {
+		bottom: -38px;
+	}
 }
 
 .head-top .head-content .eye.left-eye {
@@ -302,10 +413,10 @@ body {
 
 .container-body {
 	position: relative;
-	width: 260px;
+	width: 230px;
 	height: 230px;
 	border: 2px solid #000;
-	margin-left: 20px;
+	margin-left: 37px;
 	background: #fae721;
 	border-top-left-radius: 60%;
 	border-bottom-left-radius: 30%;
@@ -317,21 +428,21 @@ body {
 
 .arm {
 	position: absolute;
-	top: 65px;
-	height: 170px;
-	width: 60px;
+	top: 75px;
+	height: 160px;
+	width: 52px;
 	border: 2px solid #000;
 	background: #fae721;
 }
 
 .arm.arm-left {
-	left: 50px;
+	left: 47px;
 	transform: rotate(-15deg);
 	border-radius: 0% 0% 45% 45%;
 }
 
 .arm.arm-right {
-	right: 50px;
+	right: 47px;
 	transform: rotate(15deg);
 	border-radius: 0% 0% 45% 45%;
 }
@@ -349,6 +460,7 @@ body {
 
 
 /* FEET */
+
 
 .foot {
 	position: absolute;
@@ -424,7 +536,7 @@ body {
 
 .p-tail {
 	position: absolute;
-	left: 89%;
+	left: 86%;
 	bottom: 85px;
 	width: 150px;
 	height: 300px;
@@ -448,22 +560,13 @@ body {
 }
 
 .p-tail .tail.tail-2 {
-	border-bottom: none;
-	border-top: none;
-	bottom: 27px;
-	left: 0;
-	width: 20px;
-	height: 25px;
-}
-
-.p-tail .tail.tail-3 {
 	bottom: 27px;
 	left: 0;
 	width: 90px;
 	height: 25px;
 }
 
-.p-tail .tail.tail-4 {
+.p-tail .tail.tail-3 {
 	bottom: 27px;
 	left: 32px;
 	width: 50px;
@@ -471,7 +574,7 @@ body {
 	transform: skewX(20deg);
 }
 
-.p-tail .tail.tail-5 {
+.p-tail .tail.tail-4 {
 	bottom: 97px;
 	left: 12px;
 	width: 175px;
@@ -479,7 +582,34 @@ body {
 	transform: skewX(20deg);
 }
 
+/* TAIL BORDER FIX */
 
+.p-tail .tail:before {
+	position: absolute;
+	content: " ";
+	background: #fae721;
+}
+
+.p-tail .tail.tail-2:before {
+	left: 0;
+	top: 24px;
+	width: 20px;
+	height: 8px;
+}
+
+.p-tail .tail.tail-3:before {
+	left: -5px;
+	bottom: 0px;
+	width: 10px;
+	height: 25px;
+}
+
+.p-tail .tail.tail-4:before {
+	left: 0px;
+	bottom: -5px;
+	width: 50px;
+	height: 10px;
+}
 
 
 
