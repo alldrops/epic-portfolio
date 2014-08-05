@@ -1,5 +1,25 @@
 body {
-	background: #799dfe;
+	/*background: #799dfe;*/
+	background: #FFF;
+}
+
+@font-face {
+    font-family: 'PokemonSolidNormal';
+    src: url('../fonts/pokemonsolid.eot');
+    src: url('../fonts/pokemonsolid.eot') format('embedded-opentype'),
+         url('../fonts/pokemonsolid.woff') format('woff'),
+         url('../fonts/pokemonsolid.ttf') format('truetype'),
+         url('../fonts/pokemonsolid.svg#PokemonSolidNormal') format('svg');
+}
+
+h1 {
+	font-family: "PokemonSolidNormal";
+	font-size: 100px;
+	color: #ffcc03;
+	text-shadow: 10px 0 0px #3c59a5;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
 }
 
 .main-content {
